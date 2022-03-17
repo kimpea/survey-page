@@ -1,0 +1,35 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkgreen: #1b321b;
+    --color-darkgreen-alpha: rgba(27, 50, 30, 0.8);
+    --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkgreen);
+    background-image: linear-gradient(
+        115deg,
+        rgba(47, 122, 0, 0.8),
+        rgba(168, 255, 113, 0.8)
+      ),
+      url(https://www.wallpapertip.com/wmimgs/10-106807_natural-green-leaves.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+form {
+    background-color: var(--color-darkgreen-alpha);
+}
