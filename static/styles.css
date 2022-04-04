@@ -1,53 +1,95 @@
-:root {
-    --color-white: #f3f3f3;
-    --color-darkgreen: #1b321b;
-    --color-darkgreen-alpha: rgba(27, 50, 30, 0.8);
-    --color-green: #37af65;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #034732;
+    color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-image:
-    linear-gradient(to bottom, rgba(0, 78, 4, 0.52), rgba(102, 255, 85, 0.73)),
-    url(https://www.wallpapertip.com/wmimgs/10-106807_natural-green-leaves.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px;
-}
-
-header {
-    color: var(--color-white);
+#intro {
     text-align: center;
-
+    padding: 10px 0px;
 }
 
 main {
-    background-color: var(--color-darkgreen-alpha);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    background-color: #008148;
 }
 
 form {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 2px;
+    border-style: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+#survey-form {
+    padding: 5px 0px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 4px 0px;
+}
+
+.form-group p, .form-group button {
+    margin: 10px 0px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.submit-button {
+  background-color: #c6c013;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #ef8a17;
 }
